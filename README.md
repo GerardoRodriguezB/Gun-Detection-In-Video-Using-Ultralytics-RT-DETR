@@ -4,16 +4,23 @@ In this repository [Ultralytics RT-DETR](https://docs.ultralytics.com/es/models/
 
 <img src="im/test.jpg" alt="CARS" width="800" />
 
+## Dataset
 
+The dataset used for this project is available [here](https://drive.google.com/drive/folders/1gp4zzNTbTmkgv5mpvzgdXIDXsZJInSzk) and was introduced in the following [research paper](https://ieeexplore.ieee.org/document/9659207). It consists of over 50,000 images taken from movies, surveillance cameras, and academic sources, annotated in Pascal VOC (XML) format.
 
+The original dataset includes various weapon types: pistols, machine guns, shotguns, and long guns. For this project, we focused exclusively on handguns (pistols). A custom script was used to randomly sample 3,000 images and annotations, from which a manual selection of 400 training images and 100 validation images was made to ensure diversity.
 
-The [dataset](https://drive.google.com/drive/folders/1gp4zzNTbTmkgv5mpvzgdXIDXsZJInSzk) used in this project is open and was reported in this [paper](https://ieeexplore.ieee.org/document/9659207). It consists of +50,000 images from movies, survillance cameras, academic footages, with high quality annotations in format `PASCAL VOC`. The original dataset contains images of guns, machineguns, shutguns, long guns. For this project we restricted to guns, then we made a python script to randomly select 3,000 images and their annotations, and then manually I selected 400 images for training and 100 for validation, I did this way to select variety of images, and combined with data aumentation of ULTRALYTICS the detector is robust. See image below.
-- Bright and dark scenes
-- Different angles
-- Guns alone in white and custom background
-- People near and far
-- Guns of different models and color
-- Different types of oclussions
+The training/validation sets include:
+- Bright and dark environments
+- Various viewing angles
+- Guns on white and custom backgrounds
+- People near and far from the camera
+- Guns of multiple shapes, sizes, and colors
+- Different types of occlusion
+
+Combined with Ultralytics' built-in data augmentation, this selection strategy helps the model generalize well to different scenarios. See below some images showing variety in trainig/validation datasets
+
+<img src="im/sample_guns.jpg" alt="CARS" width="800" />
 
 
 
