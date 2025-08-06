@@ -1,0 +1,7 @@
+path: dataset  # ruta raíz del dataset
+train: train/images
+val: val/images
+
+names:
+  0: gun
+  1: knife
