@@ -18,11 +18,11 @@ The training/validation sets include:
 - Guns of multiple shapes, sizes, and colors
 - Different types of occlusion
 
-Combined with Ultralytics' built-in data augmentation, this selection strategy helps the model generalize well to different scenarios. See below some images showing variety in trainig/validation datasets
+Combined with Ultralytics' built-in data augmentation, this selection strategy helps the model generalize well to different scenarios. This repository includes the subset of images and labels (in YOLO format) used for training and validation. You can explore and retrain the model using these files or extend the dataset with additional samples. See below some images showing variety in trainig/validation datasets
 
 <img src="im/sample_guns.jpg" alt="CARS" width="800" />
 
-
+## Environment Setup
 
 Creeate an Anaconda environment using `python=3.10`. Navigate to the root folder of the project and install requirements
 
@@ -31,30 +31,24 @@ pip install -r requirements.txt
 ```
 
 
-If you have a GPU compatible with CUDA install
+## Install PyTORCH
+
+If your machine has a CUDA compatible GPU, install:
+
 
 ```bash
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-otherwise install the versions for CPU
+Otherwise, install the CPU versions:
 
 ```bash
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1
 ```
 
+## Video Detection
 
-
-In `video` folder it's included a video o me with a toy gun, and the scene was processed achieving good results (in the repository is included the video already processed).In this repository is included the datasets (images and labels) used in this projects for training the model.
-
-
-
-
-
-
-
-
-
+The `video` folder includes a test video featuring the author holding a toy gun. This video was processed using the trained detector, and the resulting annotated video is also included in the repository as `toy_gun_processed.mp4`.
 
 
 
