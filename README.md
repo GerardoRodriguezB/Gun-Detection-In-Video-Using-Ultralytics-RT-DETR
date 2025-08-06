@@ -2,7 +2,7 @@
 
 In this repository [Ultralytics RT-DETR](https://docs.ultralytics.com/es/models/rtdetr/) is trained to detect guns. After training, the detector is used to detect guns in video. This is a more challenging problem compared to the license plate detection implemented in a previous [repository](https://github.com/GerardoRodriguezB/License-Plate-Detector-Using-YOLOv8.git). Guns vary significantly in shape, size, color, and orientation, and often appear partially occluded, either being held by a person or hidden in clothing. These factors make robust detection considerably harder.
 
-<img src="im/test.jpg" alt="CARS" width="500" />
+<img src="im/test.jpg" alt="CARS" width="800" />
 
 
 
